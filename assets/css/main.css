@@ -875,7 +875,7 @@ section,
   align-items: center;
   gap: 10px;
   font-weight: 600;
-  animation: float 3s ease-in-out infinite;
+  animation: float 0s ease-in-out infinite;
 }
 
 .hero .hero-image .floating-elements .floating-card i {
@@ -884,21 +884,21 @@ section,
 }
 
 .hero .hero-image .floating-elements .floating-card.design {
-  top: 10%;
-  right: -10%;
+  top: 7%;
+  right: -32%;
   animation-delay: 0s;
 }
 
 .hero .hero-image .floating-elements .floating-card.code {
-  bottom: 30%;
-  left: -15%;
-  animation-delay: 1s;
+  top: 27%;
+  right: -30%;
+  animation-delay: 0s;
 }
 
 .hero .hero-image .floating-elements .floating-card.creativity {
-  top: 60%;
-  right: -5%;
-  animation-delay: 2s;
+  top: 47%;
+  right: -20%;
+  animation-delay: 0s;
 }
 
 @media (max-width: 992px) {
@@ -924,6 +924,28 @@ section,
     text-align: center;
     margin-bottom: 3rem;
   }
+}
+.form-select {
+  background-color: #fff;
+  color: #212529;
+}
+
+.form-select option {
+  color: #212529;
+  background-color: #fff;
+}
+.btn-whatsapp {
+  background-color: transparent; /* WhatsApp green */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: right;
+  gap: 6px;
+  text-decoration: none;
+  margin-left: 10px; /* spacing from other buttons */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /*--------------------------------------------------------------
@@ -2846,6 +2868,7 @@ section,
 .contact .contact-form .btn:hover {
   background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
 }
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
