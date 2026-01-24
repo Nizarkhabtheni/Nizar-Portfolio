@@ -900,6 +900,163 @@ section,
   right: -33%;
   animation-delay: 0s;
 }
+/* CTA Section Buttons */
+#dubai-cta .btn-primary {
+  background: var(--accent-color);   /* primary color */
+  color: var(--contrast-color);      /* text color */
+  border-color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+#dubai-cta .btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-color), black 15%);
+  border-color: color-mix(in srgb, var(--accent-color), black 15%);
+  transform: translateY(-2px);      /* subtle lift effect */
+}
+
+#dubai-cta .btn-outline-primary {
+  background: transparent;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+#dubai-cta .btn-outline-primary:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);      /* subtle lift effect */
+}
+
+/* Large featured images for Dubai page */
+.dubai-image-lg {
+  position: relative;
+  width: 100%;
+  height: 320px; /* bigger visual impact */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.dubai-image-lg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bigger on large screens */
+@media (min-width: 992px) {
+  .dubai-image-lg {
+    height: 250;
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+  .dubai-image-lg {
+    height: 200px;
+  }
+}
+/* Gallery Section Images */
+#dubai-gallery .img-fluid {
+    height: 250px;       /* change this value to whatever height you want */
+    object-fit: cover;   /* keeps image aspect ratio and crops excess */
+    width: 100%;         /* ensure full width of column */
+}
+
+/* Dubai Era Sections */
+.dubai-era {
+  position: relative;
+}
+
+.era-label {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9aa6b2;
+  margin-bottom: 10px;
+}
+
+.era-label.highlight {
+  color: #00bcd4;
+}
+
+.era-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.era-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cfd8dc;
+  margin-bottom: 20px;
+}
+
+.era-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.era-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  color: #b0bec5;
+}
+
+.era-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+  font-size: 20px;
+  line-height: 1;
+}
+/* Timeline wrapper */
+.dubai-timeline {
+  position: relative;
+}
+
+.dubai-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, #2098a8, transparent);
+  transform: translateX(-50%);
+  opacity: 0.3;
+}
+
+/* Year badge */
+.era-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #cfd8dc;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.era-badge.highlight {
+  background: rgba(0, 188, 212, 0.15);
+  color: #00bcd4;
+}
+
+/* Bigger images already relative */
+.dubai-image-lg img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
 
 @media (max-width: 992px) {
   .hero .hero-image .floating-elements .floating-card {
@@ -2869,6 +3026,22 @@ section,
   background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
 }
 
+/* Gallery image hover effect */
+#dubai-gallery .img-fluid {
+  transition: transform 0.3s ease, border 0.3s ease; /* smooth animation */
+  border: 2px solid transparent; /* default border */
+  border-radius: 0.5rem; /* matches your rounded-4 */
+}
+
+#dubai-gallery .img-fluid:hover {
+  transform: scale(1.5); /* slightly bigger */
+  border: 2px solid #7bb0ee; /* blue border on hover, change color as needed */
+}
+#dubai-gallery .img-fluid:hover {
+  transform: scale(1.05);
+  border: 2px solid #7bb0ee;
+  box-shadow: 0 10px 20px rgba(199, 216, 241, 0.2); /* soft shadow */
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
